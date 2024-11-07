@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="icon" type="image/png" href="images/icon-1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Countdown</h1>
+            <div class="input-container">
+                <input type="datetime-local" id="userDate">
+                <button id="toggleDarkMode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                <button onclick="setUserDate()">Set Countdown</button>
+                <div id="notification" class="notification"></div>
+            </div>
+        
+            
+            <div id="countdown">
+                <div class="counter-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div id="days" class="counter">0</div>
+                    <div>Days</div>
+                </div>
+                <div class="counter-container">
+                    <div id="hours" class="counter">0</div>
+                    <div>Hours</div>
+                </div>
+                <div class="counter-container">
+                    <div id="minutes" class="counter">0</div>
+                    <div>Minutes</div>
+                </div>
+                <div class="counter-container">
+                    <div id="seconds" class="counter">0</div>
+                    <div>Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
